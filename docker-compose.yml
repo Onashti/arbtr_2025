@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  bot:
+    build: .
+    environment:
+      - CONFIG_PATH=/app/config.yaml
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+    ports:
+      - "8000:8000"

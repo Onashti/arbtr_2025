@@ -1,0 +1,16 @@
+exchanges:
+  - name: binance
+    ws: wss://stream.binance.com:9443/ws
+    rest: https://api.binance.com
+    taker_fee: 0.0004
+  - name: bybit
+    ws: wss://stream.bybit.com/realtime
+    rest: https://api.bybit.com
+    taker_fee: 0.0005
+symbols:
+  - BTCUSDT
+  - ETHUSDT
+risk:
+  max_notional: 20000
+  max_position_per_symbol: 2.0
+  min_edge_usd: 2.0
