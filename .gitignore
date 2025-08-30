@@ -1,5 +1,15 @@
+# Python
 __pycache__/
 *.pyc
+.env
+*.db
+data/
+
+# C++
+*.o
+*.so
 build/
-cpp/fastlane/build/
-.venv/
+CMakeFiles/
+
+# Other
+*.log
