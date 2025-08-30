@@ -1,10 +1,11 @@
-version: '3.9'
+version: '3'
 services:
   bot:
     build: .
-    environment:
-      - CONFIG_PATH=/app/config.yaml
+    env_file: .env
     volumes:
-      - ./config.yaml:/app/config.yaml:ro
+      - ./logs:/app/logs
+  redis:
+    image: redis
     ports:
-      - "8000:8000"
+      - "6379:6379"
